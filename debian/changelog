@@ -1,5 +1,15 @@
 libharu (2.1.0+dfsg-1) unstable; urgency=low
 
   * Initial release (Closes: #581397)
+  * Delete unused windows build files
+  * Delete non-free pngsuite from demos
+  * Remove other copy of pngsuite
+  * Remove demo pdf files
+  * Remove font from demo (already in debian)
+  * Remove font Penguinattack, already packaged
+  * Delete unneeded autom4te cache files
+  * Update example to work with font in debian
+  * Initial import debian/* files
+  * Update autotools
 
  -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Thu, 17 Jun 2010 10:45:19 +0200
