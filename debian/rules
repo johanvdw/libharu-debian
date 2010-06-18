@@ -15,5 +15,6 @@ get-orig-source:
 	tar --delete -f $(TAR_NAME) --wildcards libharu-$(UPSTREAM_VERSION)/demo/*.pdf
 	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/demo/ttfont
 	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/demo/type1
+	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/autom4te.cache
 	gzip -9n $(TAR_NAME)
 	mv $(TAR_NAME).gz ../libharu_$(UPSTREAM_VERSION)+dfsg.orig.tar.gz	
