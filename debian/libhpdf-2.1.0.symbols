@@ -1,4 +1,4 @@
-libhpdf
+libhpdf-2.1.0.so libhpdf-2.1.0 #MINVER#
  ExtGState_Check@Base 2.1.0+dfsg
  GetElement@Base 2.1.0+dfsg
  HPDF_3DAnnot_New@Base 2.1.0+dfsg
