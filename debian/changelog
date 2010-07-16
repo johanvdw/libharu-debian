@@ -12,4 +12,4 @@ libharu (2.1.0+dfsg-1) unstable; urgency=low
   * Initial import debian/* files
   * Update autotools
 
- -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Thu, 17 Jun 2010 10:45:19 +0200
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Fri, 16 Jul 2010 20:35:57 +0200
