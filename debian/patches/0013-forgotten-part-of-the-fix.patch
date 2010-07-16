@@ -1,0 +1,22 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Sun, 4 Jan 2009 02:44:52 +0300
+Subject: [PATCH] forgotten part of the fix
+
+---
+ build.mk |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/build.mk b/build.mk
+index 7b3f05e..223dfd0 100644
+--- a/build.mk
++++ b/build.mk
+@@ -23,7 +23,7 @@ $(config_h_in): configure
+ 	@rm -f $@
+ 	$(AUTOHEADER) $(SUPPRESS_WARNINGS)
+ 
+-configure: aclocal.m4 configure.in
++configure: aclocal.m4 configure.in ltmain
+ 	@echo rebuilding $@
+ 	$(AUTOCONF) $(SUPPRESS_WARNINGS)
+ 
+-- 

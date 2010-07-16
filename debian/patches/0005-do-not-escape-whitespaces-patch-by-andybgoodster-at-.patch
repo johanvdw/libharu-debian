@@ -1,0 +1,22 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Tue, 7 Oct 2008 12:06:20 +0400
+Subject: [PATCH] do not escape whitespaces (patch by andybgoodster at googlemail dot com)
+
+---
+ include/hpdf_utils.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/include/hpdf_utils.h b/include/hpdf_utils.h
+index 5cb79c9..7ea3f7f 100644
+--- a/include/hpdf_utils.h
++++ b/include/hpdf_utils.h
+@@ -118,7 +118,7 @@ HPDF_UInt16Swap  (HPDF_UINT16  *value);
+ }
+ #endif /* __cplusplus */
+ 
+-#define HPDF_NEEDS_ESCAPE(c)    (c < 0x21 || \
++#define HPDF_NEEDS_ESCAPE(c)    (c < 0x20 || \
+                                  c > 0x7e || \
+                                  c == '\\' || \
+                                  c == '%' || \
+-- 
