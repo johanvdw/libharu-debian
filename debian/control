@@ -1,8 +1,8 @@
 Source: libharu
-Priority: extra
+Priority: optional
 Maintainer: Johan Van de Wauw <johan.vandewauw@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~), libpng-dev, libz-dev
-Standards-Version: 3.8.4
+Standards-Version: 3.9.2
 Section: libs
 Homepage: http://www.libharu.org
 Vcs-Git: git://git.debian.org/collab-maint/libharu.git
