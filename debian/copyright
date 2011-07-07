@@ -6,14 +6,6 @@ It was downloaded from:
 
     <http://libharu.org>
 
-It was repacked after removal of:
-demo/pngsuite, demo/if/c#/pngsuite: non dfsg-free license
-demo/type1: fonts already in package gsfonts
-demo/ttfont: font already in package ttf-dustin
-demo/*.pdf: binary files
-win32/: binary files and/or unneeded files for debian build
-autom4te.cache: unneeded cache 
-
 Upstream Author(s):
 
     Takeshi Kanno <takeshi_kanno@est.hi-ho.ne.jp>
@@ -23,7 +15,7 @@ Upstream Author(s):
 Copyright:
 
     Copyright (C) 1999-2006 Takeshi Kanno
-    Copyright (C) 2007-2010 Antony Dovgal
+    Copyright (C) 2007-2011 Antony Dovgal
 
 License:
 
