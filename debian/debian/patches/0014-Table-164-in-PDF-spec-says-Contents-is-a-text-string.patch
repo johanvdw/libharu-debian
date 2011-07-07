@@ -1,0 +1,23 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Mon, 6 Jul 2009 21:38:12 +0400
+Subject: [PATCH] "Table 164 in PDF spec says Contents is a text string, not a name" (c)
+ Michail
+
+---
+ src/hpdf_annotation.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/src/hpdf_annotation.c b/src/hpdf_annotation.c
+index e190779..ee2c91b 100644
+--- a/src/hpdf_annotation.c
++++ b/src/hpdf_annotation.c
+@@ -331,7 +331,7 @@ HPDF_3DAnnot_New    (HPDF_MMgr        mmgr,
+ 		return NULL;
+ 	}
+ 	
+-	HPDF_Dict_AddName (annot, "Contents", "3D Model");
++	HPDF_Dict_Add(annot, "Contents", HPDF_String_New (mmgr, "3D Model", NULL));
+ 
+ 	action = HPDF_Dict_New (mmgr);
+ 	if (!action) {
+-- 

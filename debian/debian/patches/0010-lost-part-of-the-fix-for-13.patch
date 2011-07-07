@@ -1,0 +1,23 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Tue, 16 Dec 2008 18:05:20 +0300
+Subject: [PATCH] lost part of the fix for #13
+ some weird compilers might not support this syntax
+
+---
+ include/hpdf_streams.h |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/include/hpdf_streams.h b/include/hpdf_streams.h
+index de7d1e9..4ee32b1 100644
+--- a/include/hpdf_streams.h
++++ b/include/hpdf_streams.h
+@@ -34,7 +34,7 @@ typedef enum _HPDF_StreamType {
+     HPDF_STREAM_UNKNOWN = 0,
+     HPDF_STREAM_CALLBACK,
+     HPDF_STREAM_FILE,
+-    HPDF_STREAM_MEMORY,
++    HPDF_STREAM_MEMORY
+ } HPDF_StreamType;
+ 
+ #define HPDF_STREAM_FILTER_NONE          0x0000
+-- 

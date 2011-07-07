@@ -1,0 +1,60 @@
+This work was packaged for Debian by:
+
+    Johan Van de Wauw <johan.vandewauw@gmail.com> on Wed, 12 May 2010 18:54:08 +0200
+
+It was downloaded from:
+
+    <http://libharu.org>
+
+It was repacked after removal of:
+demo/pngsuite, demo/if/c#/pngsuite: non dfsg-free license
+demo/type1: fonts already in package gsfonts
+demo/ttfont: font already in package ttf-dustin
+demo/*.pdf: binary files
+win32/: binary files and/or unneeded files for debian build
+autom4te.cache: unneeded cache 
+
+Upstream Author(s):
+
+    Takeshi Kanno <takeshi_kanno@est.hi-ho.ne.jp>
+    Antony Dovgal <tony@daylessday.org>
+    libharu@googlegroups.com    
+
+Copyright:
+
+    Copyright (C) 1999-2006 Takeshi Kanno
+    Copyright (C) 2007-2010 Antony Dovgal
+
+License:
+
+    Haru is distributed under the ZLIB/LIBPNG License. Because ZLIB/LIBPNG 
+    License is one of the freest licenses, You can use Haru for various 
+    purposes.
+    
+    The license of Haru is as follows.
+    
+    This software is provided 'as-is', without any express or implied warranty.
+    
+    In no event will the authors be held liable for any damages arising from the
+    use of this software.
+    
+    Permission is granted to anyone to use this software for any purpose,
+    including commercial applications, and to alter it and redistribute it 
+    freely, subject to the following restrictions:
+    
+     1. The origin of this software must not be misrepresented; you must not 
+        claim that you wrote the original software. If you use this software in
+        a product, an acknowledgment in the product documentation would be
+        appreciated but is not required.
+     2. Altered source versions must be plainly marked as such, and must not be
+        misrepresented as being the original software.
+     3. This notice may not be removed or altered from any source distribution.
+
+The Debian packaging is:
+
+    Copyright (C) 2010 Johan Van de Wauw <johan.vandewauw@gmail.com>
+
+and is licensed under te same ZLIB/LIBPNG license as Haru itself. Numerous fixes were pulled from the upstream git repository.
+
+include/hpdf_encrypt.h:
+Contains an implementation of MD5 message digest algorithm by Colin Plumb (1993), released in the public domain.

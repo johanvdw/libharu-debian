@@ -1,0 +1,30 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Wed, 16 Dec 2009 17:12:28 +0300
+Subject: [PATCH] fix uninitialized fields in HPDF_Type1FontDef_New() (patch by Ralf Junker)
+
+---
+ src/hpdf_fontdef_type1.c |    5 +----
+ 1 files changed, 1 insertions(+), 4 deletions(-)
+
+diff --git a/src/hpdf_fontdef_type1.c b/src/hpdf_fontdef_type1.c
+index 7661e40..0c79bc6 100644
+--- a/src/hpdf_fontdef_type1.c
++++ b/src/hpdf_fontdef_type1.c
+@@ -72,15 +72,12 @@ HPDF_Type1FontDef_New  (HPDF_MMgr  mmgr)
+     if (!fontdef)
+         return NULL;
+ 
++    HPDF_MemSet (fontdef, 0, sizeof (HPDF_FontDef_Rec));
+     fontdef->sig_bytes = HPDF_FONTDEF_SIG_BYTES;
+-    fontdef->base_font[0] = 0;
+     fontdef->mmgr = mmgr;
+     fontdef->error = mmgr->error;
+     fontdef->type = HPDF_FONTDEF_TYPE_TYPE1;
+-    fontdef->clean_fn = NULL;
+     fontdef->free_fn = FreeFunc;
+-    fontdef->descriptor = NULL;
+-    fontdef->valid = HPDF_FALSE;
+ 
+     fontdef_attr = HPDF_GetMem (mmgr, sizeof(HPDF_Type1FontDefAttr_Rec));
+     if (!fontdef_attr) {
+-- 

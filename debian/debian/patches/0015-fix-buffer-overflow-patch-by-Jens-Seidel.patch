@@ -1,0 +1,27 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Mon, 7 Dec 2009 12:45:11 +0300
+Subject: [PATCH] fix buffer overflow (patch by Jens Seidel)
+
+---
+ src/hpdf_encoder.c |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/hpdf_encoder.c b/src/hpdf_encoder.c
+index 789b0e9..e3bf662 100644
+--- a/src/hpdf_encoder.c
++++ b/src/hpdf_encoder.c
+@@ -2481,11 +2481,11 @@ HPDF_BasicEncoder_Write  (HPDF_Encoder  encoder,
+                 const char* char_name =
+                     HPDF_UnicodeToGryphName (attr->unicode_map[i]);
+ 
+-                ptmp = HPDF_IToA (ptmp, i, tmp + HPDF_TMP_BUF_SIZ - 1);
++                ptmp = HPDF_IToA (ptmp, i, tmp + HPDF_TEXT_DEFAULT_LEN - 1);
+                 *ptmp++ = ' ';
+                 *ptmp++ = '/';
+                 ptmp = (char *)HPDF_StrCpy (ptmp, char_name, tmp +
+-                        HPDF_TMP_BUF_SIZ - 1);
++                        HPDF_TEXT_DEFAULT_LEN - 1);
+                 *ptmp++ = ' ';
+                 *ptmp = 0;
+ 
+-- 

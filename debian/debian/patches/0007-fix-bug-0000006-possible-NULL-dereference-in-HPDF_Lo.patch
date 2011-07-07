@@ -1,0 +1,25 @@
+From: Antony Dovgal <tony@daylessday.org>
+Date: Sat, 11 Oct 2008 23:47:48 +0400
+Subject: [PATCH] fix bug #0000006 (possible NULL dereference in HPDF_LoadPngImageFromFile2())
+
+---
+ src/hpdf_doc_png.c |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+diff --git a/src/hpdf_doc_png.c b/src/hpdf_doc_png.c
+index 53bf85d..df873fe 100644
+--- a/src/hpdf_doc_png.c
++++ b/src/hpdf_doc_png.c
+@@ -84,8 +84,10 @@ HPDF_LoadPngImageFromFile2  (HPDF_Doc     pdf,
+     if (imagedata)
+         HPDF_Stream_Free (imagedata);
+ 
+-    if (!image)
++    if (!image) {
+         HPDF_CheckError (&pdf->error);
++        return NULL;
++    }
+ 
+     /* add file-name to image dictionary as a hidden entry.
+      * it is used when the image data is needed.
+-- 
