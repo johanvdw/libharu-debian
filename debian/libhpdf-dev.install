@@ -1,4 +1,2 @@
 usr/include/*
-usr/lib/lib*.a
 usr/lib/libhpdf.so
-usr/lib/*.la
