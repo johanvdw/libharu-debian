@@ -1,4 +1,4 @@
-libharu (2.2.1-1) UNRELEASED; urgency=low
+libharu (2.2.1-1) unstable; urgency=low
 
   * update to upstream 2.2.1
   * Set priority to optional instead of extra, closes bug:#631332
@@ -8,7 +8,7 @@ libharu (2.2.1-1) UNRELEASED; urgency=low
   * Update package name to reflect soname change
   * Remove libtool-helper (*.la) and static library (*.a) from -dev package
 
- -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Fri, 08 Jul 2011 17:23:26 -0400
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Fri, 08 Jul 2011 17:50:54 -0400
 
 libharu (2.1.0+dfsg-1) unstable; urgency=low
 
