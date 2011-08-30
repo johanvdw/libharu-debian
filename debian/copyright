@@ -1,24 +1,23 @@
-This work was packaged for Debian by:
+Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=174
+Upstream-Name: libharu
+Upstream-Contact: libharu@googlegroups.com
+Source: http://libharu.org/files/libharu-2.2.1.tar.gz
 
-    Johan Van de Wauw <johan.vandewauw@gmail.com> on Wed, 12 May 2010 18:54:08 +0200
+Files: *
+Copyright: 1999-2006, Takeshi Kanno
+Copyright: 2007-2011, Antony Dovgal
+License: Zlib
 
-It was downloaded from:
+Files: debian/*
+Copyright: 2010, Johan Van de Wauw
+License: Zlib
 
-    <http://libharu.org>
+Files: debian/patches/*
+Copyright: 2011, Antony Dovgal
+           2011, Daniel Höpfl 
+License: Zlib
 
-Upstream Authors:
-
-    Takeshi Kanno <takeshi_kanno@est.hi-ho.ne.jp>
-    Antony Dovgal <tony@daylessday.org>
-    libharu@googlegroups.com    
-
-Copyright:
-
-    Copyright (C) 1999-2006 Takeshi Kanno
-    Copyright (C) 2007-2011 Antony Dovgal
-
-License:
-
+License: Zlib
     Haru is distributed under the ZLIB/LIBPNG License. Because ZLIB/LIBPNG 
     License is one of the freest licenses, You can use Haru for various 
     purposes.
@@ -42,11 +41,3 @@ License:
         misrepresented as being the original software.
      3. This notice may not be removed or altered from any source distribution.
 
-The Debian packaging is:
-
-    Copyright (C) 2010 Johan Van de Wauw <johan.vandewauw@gmail.com>
-
-and is licensed under te same ZLIB/LIBPNG license as Haru itself. Numerous fixes were pulled from the upstream git repository.
-
-include/hpdf_encrypt.h:
-Contains an implementation of MD5 message digest algorithm by Colin Plumb (1993), released in the public domain.
