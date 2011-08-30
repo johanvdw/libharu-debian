@@ -7,8 +7,9 @@ libharu (2.2.1-1) unstable; urgency=low
   * Update copyright/rules file, no dfsg cleaning needed anymore
   * Update package name to reflect soname change
   * Remove libtool-helper (*.la) and static library (*.a) from -dev package
+  * Update copyright file to DEP-5 format 
 
- -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Fri, 08 Jul 2011 17:50:54 -0400
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Tue, 30 Aug 2011 18:39:57 -0400
 
 libharu (2.1.0+dfsg-1) unstable; urgency=low
 
