@@ -5,8 +5,8 @@ Build-Depends: debhelper (>= 7.0.50~), libpng-dev, libz-dev, dh-autoreconf
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://www.libharu.org
-Vcs-Git: git://git.debian.org/collab-maint/libharu.git -b debian
-Vcs-Browser: http://git.debian.org/?p=collab-maint/libharu.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/libharu.git -b debian
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/libharu.git
 
 Package: libhpdf-dev
 Section: libdevel
