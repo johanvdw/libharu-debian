@@ -6,11 +6,11 @@ Subject: fix HPDF_GetContents() (patch by Vincent Dupont)
  src/hpdf_doc.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
-diff --git a/src/hpdf_doc.c b/src/hpdf_doc.c
-index 7ba58df..4aed4ab 100644
---- a/src/hpdf_doc.c
-+++ b/src/hpdf_doc.c
-@@ -658,7 +658,7 @@ HPDF_GetContents   (HPDF_Doc   pdf,
+Index: libharu/src/hpdf_doc.c
+===================================================================
+--- libharu.orig/src/hpdf_doc.c	2013-10-27 11:01:28.000000000 +0100
++++ libharu/src/hpdf_doc.c	2013-10-27 11:01:28.000000000 +0100
+@@ -658,7 +658,7 @@
                   HPDF_UINT32  *size)
  {
      HPDF_Stream stream;
@@ -19,4 +19,3 @@ index 7ba58df..4aed4ab 100644
      HPDF_STATUS ret;
  
      HPDF_PTRACE ((" HPDF_GetContents\n"));
--- 

@@ -4,3 +4,4 @@
 0004-Several-fixes-based-on-the-warnings-generated-by-cla.patch
 0005-fix-possible-endless-loops-in-PNG-handling-code.patch
 0006-fix-HPDF_GetContents-patch-by-Vincent-Dupont.patch
+support_huge_fonts.patch
