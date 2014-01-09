@@ -25,7 +25,7 @@ Description: C library for generating pdf files (development files)
   8. Support for CJK fonts and encodings.
  This package contains the header files for developing with libharu.
 
-Package: libhpdf-2.2.1
+Package: libhpdf-2.3.0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: C library for generating pdf files
