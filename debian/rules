@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 %:
-	dh  $@
+	dh  $@ --buildsystem=autoconf --with autoreconf
 
 UPSTREAM_URL ?=$(shell uscan --dehs | sed -n 's/.*<upstream-url>\(.*\)<\/upstream-url>.*/\1/p')
 UPSTREAM_VERSION ?=$(shell echo $(UPSTREAM_URL)| sed 's/.*\/\(.*\)\.tar\.gz/\1/')
