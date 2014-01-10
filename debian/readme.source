@@ -1,0 +1,10 @@
+This package was downloaded from   <http://libharu.org>
+ 
+It was repacked after removal of:
+demo/pngsuite: non dfsg-free license
+demo/type1: fonts already in package gsfonts
+demo/ttfont: font already in package ttf-dustin
+demo/*.pdf: binary files
+win32/: binary files and/or unneeded files for debian build
+
+These steps can be done again running debian/rules get-orig-source
