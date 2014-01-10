@@ -1,7 +1,7 @@
 Source: libharu
 Priority: optional
 Maintainer: Johan Van de Wauw <johan.vandewauw@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), libpng-dev, libz-dev, dh-autoreconf
+Build-Depends: debhelper (>= 9), libpng-dev, libz-dev, dh-autoreconf
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://www.libharu.org
