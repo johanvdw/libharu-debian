@@ -1,3 +1,21 @@
+libharu (2.3.0-1) UNRELEASED; urgency=medium
+
+  [ Johan Van de Wauw ]
+  * Imported Upstream version 2.3.0
+  * Bump standards version (no changes needed)
+  * Bump library package number
+  * Update install filename
+  * Switch to debhelper 9 - enable multiarch
+  * Remove unneccessary patches
+  * Revert "Update copyright/rules file, no dfsg cleaning needed anymore"
+  * Update rules to new upstream tarball format
+  * Add info on how to build dfsg-free version
+  * Imported Upstream version 2.3.0+dfsg
+  * Make sure autoconf is used (as was in previous packages)
+  * Use Files-excluded to repack original tarball
+  * Fix version dependency in control file
+
+ -- Johan Van de Wauw <johan.vandewauw@gmail.com>  Wed, 16 Jul 2014 04:30:26 -0400 
 libharu (2.2.1-2) unstable; urgency=low
 
   [ Johan Van de Wauw ]
