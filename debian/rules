@@ -8,12 +8,4 @@ DEBIAN_VERSION ?=$(shell uscan --dehs | sed -n 's/.*<upstream-version>\(.*\)<\/u
 TAR_NAME ?=libharu-$(UPSTREAM_VERSION).tar
 
 get-orig-source:
-	wget $(UPSTREAM_URL) --output-document $(TAR_NAME).gz
-	gunzip $(TAR_NAME).gz
-	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/demo/pngsuite 
-	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/win32
-	tar --delete -f $(TAR_NAME) --wildcards libharu-$(UPSTREAM_VERSION)/demo/*.pdf
-	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/demo/ttfont
-	tar --delete -f $(TAR_NAME) libharu-$(UPSTREAM_VERSION)/demo/type1
-	gzip -9n $(TAR_NAME)
-	mv $(TAR_NAME).gz ../libharu_$(DEBIAN_VERSION)+dfsg.orig.tar.gz	
+	uscan --verbose --force-download --repack --compression xz

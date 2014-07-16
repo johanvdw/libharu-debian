@@ -1,7 +1,7 @@
-Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=174
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.1/
 Upstream-Name: libharu
 Upstream-Contact: libharu@googlegroups.com
-Source: http://libharu.org/files/libharu-2.2.1.tar.gz
+Files-Excluded: demo/pngsuite win32  demo/*.pdf demo/ttfont demo/type1
 
 Files: *
 Copyright: 1999-2006, Takeshi Kanno
@@ -40,3 +40,4 @@ License: Zlib
   2. Altered source versions must be plainly marked as such, and must not be
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
+
